@@ -289,9 +289,7 @@ function ProductDetails(props) {
                             </div>
                             <div id="description" className="navClass details__bottomLeftContent">
                                 <h3>Description :</h3>
-                                <p> Halaldokan.com is an online shop in Dhaka, Bangladesh. We believe time is valuable to our fellow Dhaka residents, and that they should not 
-                                    have to waste hours in traffic, brave bad weather and wait in line just to buy basic necessities like eggs! This is why Halaldokan delivers 
-                                    everything you need right at your door-step and at no additional cost.
+                                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
                                 </p>
                                 <div className="details__bottomLeftContentVideo">
                                     <iframe width="100%" height="500px" src={`https://www.youtube.com/embed/${product.productVideo ? product.productVideo : ''}`} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

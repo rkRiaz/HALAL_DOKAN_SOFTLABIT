@@ -62,7 +62,6 @@ function Header(props) {
             console.log(err.response)
         })
     }, [])
-
     return (
         <div className="header">
 
