@@ -1,5 +1,4 @@
 const Category = require('../models/Category')
-const formidable = require('formidable');
 
 exports.allCategory = async (req, res, next) => {
     try{

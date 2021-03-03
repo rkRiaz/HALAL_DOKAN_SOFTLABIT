@@ -1,7 +1,6 @@
 const Product = require('../models/Product')
 const { validationResult } = require('express-validator')
 const { errorFormatter } = require('../utils/errorFormatter')
-const fs = require('fs')
 
 
 
