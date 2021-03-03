@@ -1,0 +1,89 @@
+.shipping{
+    max-width: 1400px;
+    margin: 50px auto;
+}
+.shipping__content{
+    margin-top: 20px;
+    color: #2C2C2C;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    column-gap: 10px;
+}
+.shipping__headline{
+    font-size: 20px;
+    font-weight: 600;
+    color: #5D5D5D;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.shipping__content h3{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.shipping__content h3::before{
+    content: " ";
+    position: absolute;
+    background: #FE0000;
+    top: 100%;
+    height: 3px;
+    width: 120px;
+}
+.shipping__contentForm{
+    width: 100%;
+    background: #fff;
+    padding: 30px;
+    box-shadow: var(--darkShadow)
+}
+
+.shipping__contentFormIcon{
+    font-size: 20px;
+    position: absolute;
+    bottom: 20%;
+    right: 2%;
+    color: #5D5D5D
+}
+
+.shipping__contentInput{
+    height: 60px !important;
+    background: #fff !important;
+}
+.shipping__contentFormGroup{
+    position: relative;
+}
+.shipping__contentBtn{
+    width: 280px;
+    height: 60px;
+    border-radius: 10px !important;
+    background-color: #081621 !important;
+    border: none !important;
+}
+
+.shipping__contentOrderSummery{
+    background: #fff;
+    padding: 20px;
+    font-weight: 600;
+    box-shadow: var(--boxShadow);
+}
+.shipping__contentOrderSummery h4{
+    font-weight: 600;
+}
+.shipping__contentOrderSummeryTotal{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1450px) {
+    .shipping {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .shipping__contentForm{
+        width: 300px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,14 @@
+.customers{
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 110px;
+}
+.customers__chart{
+    background: var(--mainWhite);
+    box-shadow: var(--darkShadow);
+    padding: 20px;
+    margin: 0 10px;
+    overflow-x: scroll;
+    font-weight: bold;
+
+}

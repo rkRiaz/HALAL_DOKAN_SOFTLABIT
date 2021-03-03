@@ -1,0 +1,104 @@
+.payment{
+    max-width: 1400px;
+    margin: 50px auto;
+}
+.payment__content{
+    margin-top: 20px;
+    color: #2C2C2C;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.payment__headline{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.payment__headline::before{
+    content: " ";
+    position: absolute;
+    background: #FE0000;
+    top: 100%;
+    height: 3px;
+    width: 120px;
+}
+.payment__contentMethods{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    margin: 20px 0;
+}
+.payment__contentMethodsMethod{
+    width: 200px;
+    height: 200px;
+    box-shadow: var(--darkShadow);
+    display: grid;
+    place-items: center;
+    margin-left: 20px;
+    transition: all 0.3s ;
+}
+.payment__contentMethodsMethod:hover{
+    cursor: pointer;
+    background-color: rgb(0, 115, 192) !important;
+    color: #fff !important;
+}
+.payment__contentMethodsMethodContent{
+    text-align: center;
+    font-weight: 600;
+}
+.payment__contentMethodsMethodIcon{
+    font-size: 35px;
+}
+.payment__contentMethodsDetails{
+    width: 100%;
+    height: 50vh;
+    background-color: #fff;
+    box-shadow: var(--darkShadow);
+    margin-top: 30px;
+    padding: 50px;
+}
+.payment__contentMethodsDetailsContent{
+    display: none;
+}
+
+
+
+.payment__contentBtn{
+    width: 280px;
+    height: 60px;
+    border-radius: 10px !important;
+    background-color: #081621 !important;
+    border: none !important;
+}
+
+.payment__contentOrderSummery{
+    background: #fff;
+    padding: 20px;
+    font-weight: 600;
+    box-shadow: var(--boxShadow);
+}
+.payment__contentOrderSummery h4{
+    font-weight: 600;
+}
+.payment__contentOrderSummeryTotal{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1450px) {
+    .payment {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .payment__contentForm{
+        width: 300px;
+        padding: 10px;
+    }
+}

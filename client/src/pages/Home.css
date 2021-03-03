@@ -1,0 +1,117 @@
+.home{
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    z-index: -100;
+}
+/* .home__banner{
+    position: relative;
+    z-index: 100;
+} */
+.home__tab{
+    margin-top: 50px;
+}
+.home__headline{
+    font-size: 20px;
+    font-weight: 600 ;
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: var(--darkShadow);
+    margin-bottom: 5px;
+}
+.home__collection,
+.home__category,
+.home__allCategories
+{
+    max-width: 1450px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 20px 0;
+    /* background: red; */
+}
+.home__allCategories
+{
+    max-width: 1450px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* background: red; */
+}
+.home__collection h2,
+.home__category h2
+{
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px 0;
+}
+.home__collectionList
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+.home__allCategoriesList
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+@media screen and (max-width: 1450px) {
+    .home__collection,
+    .home__category,
+    .home__allCategories
+    {
+        margin-left: 50px;
+        margin-right: 50px;
+    }  
+}
+@media screen and (max-width: 1024px) {
+    .home{
+        background-color: #f5f5f5;
+        padding: 20px 0;
+        z-index: -100;
+    }
+    .home__collectionList{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .home__allCategoriesList
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+
+    .home__collection,
+    .home__category,
+    .home__allCategories
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }    
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+    .home__collectionList{
+        grid-template-columns: 1fr 1fr;
+    }
+    .home__allCategoriesList
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .home__collectionList{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,139 @@
+.login {
+    padding-bottom: 50px;
+}
+.login__container{
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loginTop{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.loginTop img{
+    width: 26px;
+    height: 21px;
+}
+.loginTop a{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+}  
+.loginTopArrowIcon{
+    width: 15px !important;
+    height: 15px !important;
+    margin-left: 10px;
+}
+.login__headline{
+    font-size: 21px;
+    font-weight: 600;
+    color: #5D5D5D;
+    margin-top: 20px;
+    
+}
+.login__content{
+    margin-top: 10px;
+    color: #2C2C2C;
+}
+
+.login__contentLeft h3,
+.login__contentRight h3{
+    position: relative;
+    margin-top: 20px;
+}
+.login__contentLeft h3::before,
+.login__contentRight h3::before{
+    content: " ";
+    position: absolute;
+    background: #FE0000;
+    top: 100%;
+    height: 3px;
+    width: 120px;
+}
+.login__contentLeft p{
+    margin: 10px 0;
+    font-size: 16px;
+}
+.login__contentLeftBtn{
+    width: 280px;
+    height: 60px;
+    border: none !important;
+    box-shadow: var(--darkShadow);
+}
+.login__contentRightForm{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.login__contentRightForm p{
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.login__contentRightInput{
+    height: 60px !important;
+    background: #fff !important;
+}
+.login__contentRightFormGroup{
+    position: relative;
+}
+.login__contentRightFormIcon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 5%;
+    bottom: 35%;
+    color: #5D5D5D
+}
+.login__contentRightInput[type=text]{
+    padding-left: 20px !important;
+}
+.login__contentRightBtn{
+    width: 280px;
+    height: 60px;
+    background-color: #FE0000 !important;
+    margin-top: 10px;
+    border: none !important;
+    box-shadow: var(--darkShadow);
+}
+@media screen and (max-width: 1450px) {
+    .login__container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .login__container{
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .login__contentRight{
+       margin-top: 20px;
+    }
+
+    .login__contentRightForm{
+
+        margin-top: 20px;
+    }
+
+
+
+}
+@media screen and (max-width: 1024px) {
+
+
+}
+@media screen and (max-width: 768px) {
+    .login__contentRightInput{
+
+    }
+
+}
+@media screen and (max-width: 450px) {
+    .login__contentRightInput{
+       
+    }
+
+}

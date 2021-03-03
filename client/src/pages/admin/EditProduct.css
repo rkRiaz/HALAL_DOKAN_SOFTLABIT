@@ -1,0 +1,122 @@
+.editProduct{
+    margin-top: 100px;
+    padding: 10px;
+}
+.editProduct__headline{
+    font-size: 28px;
+    font-weight: 600;
+    color: #5D5D5D;
+    margin-bottom: 20px;
+}
+.editProduct__content{
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    background: var(--mainWhite);
+    box-shadow: var(--darkShadow);
+}
+.editProduct__contentForm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.editProduct__contentInput{
+    height: 60px !important;
+    background: #fff !important;
+}
+
+.editProduct__editImages{
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.editProduct__editImage {
+    max-width: 100px;
+    height: 100px;
+    box-shadow: var(--darkShadow);
+    cursor: pointer;
+    margin: 5px 0;
+    position: relative;
+}
+.editProduct__editImage img{
+    margin-top: 10px;
+    width: 100%;
+    max-height: 130px;
+    object-fit: contain;
+}
+.editProduct__editImageDelete{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    color: #5d0000;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(255, 45, 45, 0.76);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.editProduct__contentBtn{
+    width: 280px;
+    height: 60px;
+    margin-top: 20px;
+    border: none !important;
+}
+
+@media screen and (max-width: 1750px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 1024px) {
+
+
+}
+@media screen and (max-width: 768px) {
+    .editProduct__contentInput[type=text],
+    .editProduct__contentInput[type=email],
+    .editProduct__contentInput[type=number],
+    .editProduct__contentInput[type=password]{
+        padding-left: 20px !important;
+    }
+    .editProduct__contentBtn{
+        width: 300px;
+        height: 60px;
+        font-size: 20px !important;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+}
+
+
+/* .addCategory__contentForm{
+    position: fixed;
+    background-color: black;
+    opacity: .8;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.hideAddCategory__contentForm{
+    display: none;
+} */
+
+.addCategory__contentInput{
+    /* height: 100px !important; */
+    width: 300px !important;
+    background-color: #fff !important;
+}
+

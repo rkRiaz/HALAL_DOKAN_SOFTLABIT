@@ -1,0 +1,11 @@
+.admin__login {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.admin__login__content{
+    width: 300px;
+    padding: 20px;
+    box-shadow: var(--darkShadow);
+}

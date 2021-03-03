@@ -1,0 +1,176 @@
+.footer{
+    width: 100%;
+    padding: 50px 0;
+}
+.footer__content{
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer__top{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #707070;
+    padding: 100px 0;
+}
+
+.footer__top h5{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #cecece;
+    margin-bottom: 30px;
+}
+.footer__top h5::after{
+    content: " ";
+    position: absolute;
+    background: #cecece;
+    bottom: -10px;
+    left: 0;
+    height: 3px;
+    width: 120px;
+}
+.footer__topSocial{
+    margin-right: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+.footer__topSocialLogo img{
+    width: 70px;
+    height: 70px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+.footer__topSocialIcons a{
+    margin-left: 30px;
+}
+.footer__topSocialIcons a:nth-child(1){
+    margin-left: 0px;
+}
+.footer__topSocialIcons img{
+    width: 42px;
+    height: 42px;
+}
+.footer__topSocialIcons a,
+.footer__topAboutUs a,
+.footer__topOrderProcedure a{
+    color: #cecece !important;
+}
+.footer__topSocialIcons a:hover,
+.footer__topAboutUs a:hover,
+.footer__topOrderProcedure a:hover{
+    color: #aaaaaa !important;
+}
+
+
+.footer__topContactUs{
+    color: #cecece;
+}
+
+.footer__bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 350px;
+    color: #cecece;
+}
+.footer__bottomPaymentIcons{
+    margin: 30px 0;
+}
+.footer__bottomPaymentIcons img{
+    width: 70px;
+    height: 45px;
+    margin-left: 15px;
+}
+.footer__bottomPaymentIcons img:nth-child(1){
+    margin-left: 0px;
+}
+.footer__bottomPaymentIcons img:nth-child(6){
+    width: 240px;
+    height: 45px;
+}
+.footer__bottom h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+.footer__bottomCopywrite p{
+    font-size: 16x;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 1750px) {
+    .footer__content {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .footer__top{
+        /* grid-template-columns: 2fr 2fr ; */
+    }
+    .footer__topContactUs{
+        /* margin-top: 50px; */
+    }
+}
+@media screen and (max-width: 1024px) {
+    .footer__content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .footer__topSocialIcons a{
+        margin-left: 20px;
+    }
+    .footer__topSocialIcons img{
+        width: 42px;
+        height: 42px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .footer{
+        padding: 0px;
+    }
+    .footer__top{
+        grid-template-columns: 1fr 1fr ;   
+    }
+    .footer__topSocialLogo img{
+        margin-top: -30px;
+    }
+    .footer__topSocialIcons img{
+        width: 25px;
+        height: 25px;
+    }
+    .footer__topOrderProcedure{
+        margin-top: 25px;
+    }
+    .footer__topContactUs{
+        margin-top: 25px;
+
+    }
+    .footer__bottomPaymentIcons img{
+
+       
+        margin-left: 10px;
+    }
+    .footer__bottomPaymentIcons img:nth-child(6){
+        width: 150px;
+        height: 40px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .footer__top{
+        grid-template-columns: 1fr;
+    }
+    .footer__topAboutUs{
+        margin-top: 20px;
+    }
+
+}
+
+

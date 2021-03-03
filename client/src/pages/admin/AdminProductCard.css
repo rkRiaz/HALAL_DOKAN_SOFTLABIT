@@ -1,0 +1,68 @@
+.adminProductCard{
+    width: 150px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: var(--darkShadow);
+    margin: 5px 5px;
+}
+.adminProductCard:hover{
+    color: #5D5D5D !important;
+}
+.adminProductCardLargeImage{
+    max-width: 150px;
+    height: 100px;
+}
+.adminProductCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adminProductCard__name{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primaryColor);
+    text-align: center;
+}
+.adminProductCardActions{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+}
+.adminProductCardActions a{
+    display: grid;
+    place-items: center;
+    box-shadow: var(--darkShadow);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #005b92;
+    cursor: pointer;
+    color: #fff !important;
+    font-size: 20px;
+}
+.adminProductCardActions :nth-child(2) {
+    background-color: #fe0000;
+}
+
+
+.deleteAlertBox{
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #536976;
+    background: -webkit-linear-gradient(to right, #292E49, #536976);
+    background: linear-gradient(to right, #292E49, #536976);
+    width: 300px;
+    height: 300px;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 10000000;
+}
+
+

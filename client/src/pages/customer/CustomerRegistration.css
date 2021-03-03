@@ -1,0 +1,126 @@
+.registration__container{
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.registrationTop{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.registrationTop img{
+    width: 26px;
+    height: 21px;
+}
+.registrationTop a{
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+}  
+.registrationTopArrowIcon{
+    width: 15px !important;
+    height: 15px !important;
+    margin-left: 10px;
+}
+.registration__headline{
+    font-size: 21px;
+    font-weight: 600;
+    color: #5D5D5D;
+    margin-top: 20px;
+}
+.registration__content{
+    color: #2C2C2C;
+    display: grid;
+    place-items: center;
+}
+.registration__content h3{
+    position: relative;
+    margin-top: 20px;
+}
+.registration__content h3::before{
+    content: " ";
+    position: absolute;
+    background: #FE0000;
+    top: 100%;
+    height: 3px;
+    width: 120px;
+}
+.registration__contentForm{
+    width: 100%;
+    padding: 20px 0px;
+    text-align: center;
+}
+.registration__contentFormInputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+.registration__contentFormIcon{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 5%;
+    bottom: 35%;
+}
+.registration__contentFormCheckBox{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+}
+.registration__contentFormCheckBox a:hover{
+    text-decoration: underline !important;
+}
+.registration__contentInput{
+    height: 60px !important;
+    background: #fff !important;
+}
+.registration__contentFormGroup{
+    position: relative;
+}
+.registration__contentForm img{
+    width: 18px;
+    height: 22px;
+    position: absolute;
+    right: 30px;
+    bottom: 40%;
+}
+.registration__contentInput[type=text],
+.registration__contentInput[type=email],
+.registration__contentInput[type=number],
+.registration__contentInput[type=password]{
+    padding-left: 20px !important;
+}
+.registration__contentBtn{
+    width: 280px;
+    height: 60px;
+    margin-top: 30px;
+    border: none !important;
+}
+
+@media screen and (max-width: 1450px) {
+    .registration__container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 1024px) {
+    .registration__contentFormInputs{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+    .registration__contentFormInputs{
+        grid-template-columns: 1fr;
+    }
+}

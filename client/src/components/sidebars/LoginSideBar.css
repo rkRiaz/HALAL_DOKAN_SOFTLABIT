@@ -1,0 +1,38 @@
+.login__sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    box-shadow: var(--darkShadow);
+    background: white;
+    z-index: 2;
+    overflow-x: hidden;
+    width: 300px;
+    transition: var(--mainTransition);
+  }
+  .loginSideBar__closeBtn{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: .5;
+    transition: var(--mainTransition);
+}
+  .login__sidebar__off{
+    width: 0px !important;
+  }
+
+  .login__closebtn{
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    transition: .2s;
+  }
+
+  .login__closebtn:hover{
+    color: red;
+}

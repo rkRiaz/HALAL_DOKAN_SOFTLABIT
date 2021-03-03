@@ -1,0 +1,183 @@
+   .category{
+        padding-bottom: 50px;
+        background-color: #f5f5f5;
+    }
+  .category__content{
+      max-width: 1450px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .category__header{
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+  }
+  .category__header img{
+    width: 15px;
+    height: 15px;
+  }
+  .category__header a{
+    text-transform: uppercase;
+    font-size: 15px !important;
+    font-weight: 600;
+    margin-left: 10px;
+  }  
+  .category__headerArrowIcon{
+    width: 12px !important;
+    height: 12px !important;
+    margin-left: 10px;
+  }
+  .category__explore{
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: auto auto;
+  }
+  .category__exploreLeft{
+  }
+  .category__exploreLeftDrawer{
+      width: 300px;
+      height: auto;
+      overflow: scroll !important;
+      padding: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      box-shadow: var(--darkShadow);
+      background-color: #fff;
+  }
+  .category__exploreLeftItem{
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eeeeee;
+      font-size: 20px;
+  }
+  .category__exploreLeftItem span{
+        font-size: 15px;
+  }
+  .category__exploreRight{
+      max-width: 1253px;
+      margin-left: 20px;
+  }
+  .category__exploreRightCategory{
+      background-color: #fff;
+      box-shadow: var(--darkShadow);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  .category__exploreRightCategory a{
+      padding: 10px 20px;
+      background-color:#EFEFEF;
+      color: #081621;
+      font-size: 16px;
+      font-weight: 600;
+      margin: 10px;
+  }
+  .category__exploreRightSort{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: var(--darkShadow);
+}
+.category__exploreRightSortMenuIcon{
+    display: none;
+    margin-left: 15px;
+    font-size: 20px;
+}
+.category__exploreRightSortDropDown{
+    display: flex;
+    align-items: center;
+}
+
+.category__exploreRightSortDropDown select{
+    margin: 10px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #494949;
+    appearance: none;
+    outline: none !important;
+    border: none !important;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url('../assets/icons/drop-down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right .7em top 51%, 0, 0;
+    background-size: .65em auto, 100%;
+    background-color: #fff;
+    padding: 0 30px 0 10px;
+    cursor: pointer;
+}
+.category__exploreRightSortDropDown select option{
+    font-size: 14px;
+    font-weight: 600;
+    color: #494949;
+}
+  .category__exploreRightProductsCategory{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 15px;
+      row-gap: 15px;
+      transition: .5s;
+  }
+  
+  
+  @media screen and (max-width: 1450px) {
+      .category__content {
+          margin-left: 20px;
+          margin-right: 20px;
+      }
+  }
+  
+  @media screen and (max-width: 1024px) {
+      .category__explore{
+          grid-template-columns: auto;
+          row-gap: 20px;
+      }
+      .category__exploreRight{
+        margin-left: 0px;
+    }
+    .category__exploreRightSortMenuIcon{
+        display: block;
+    }
+    .category__exploreLeft{
+        z-index: 1000000;
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 0;
+        overflow-x: hidden;
+        transition: .3s;
+    }
+    .category__exploreLeftDrawer{
+        height: 100vh;
+    }
+    .category__exploreLeftClose{
+        width: 100%;
+        height: 100vh;
+        background-color: #000;
+        opacity: .8;
+    }
+    .category__exploreLeftShow{
+        width: 100vw;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .category__exploreRightProductsCategory{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 576px) {
+      .category__exploreRightProductsCategory{
+          grid-template-columns: 1fr 1fr;
+      }
+  }
+  
