@@ -2,7 +2,7 @@ const Product = require('../models/Product')
 const { validationResult } = require('express-validator')
 const { errorFormatter } = require('../utils/errorFormatter')
 const fs = require('fs')
-const formidable = require('formidable');
+
 
 
 exports.allProducts = async (req, res, next) => {
@@ -325,7 +325,6 @@ exports.getProductsBySubCategory = async (req, res, next) => {
 
 
 
-
 exports.addProduct = async (req, res, next) => {
     // return console.log( JSON.parse(JSON.stringify(req.body)))
     let errors = validationResult(req).formatWith(errorFormatter)
@@ -333,7 +332,6 @@ exports.addProduct = async (req, res, next) => {
     if (!errors.isEmpty()) {
         return res.status(400).json(errors.mapped())
     }
-    
     
     try{
         let productImages = req.files.map(file => file.filename)
