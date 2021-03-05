@@ -77,7 +77,7 @@ const AdminChangePassword = (props) => {
                             />
                             <AiOutlineLock className="adminChangePassword__FormGroupIcon"/>
                         </Form.Group>
-                        <Button className="adminChangePassword__FormBtn" type="submit" variant="danger">Change Password</Button>
+                        <Button disabled className="adminChangePassword__FormBtn" type="submit" variant="danger">Change Password</Button>
                     </Form>
                 </div> 
             </div>

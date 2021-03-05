@@ -97,7 +97,7 @@ const Cart = (props) => {
                             <tbody>
                                 {cart_products.map(p => (
                                     <tr className="tableRow">
-                                        <td><Link to={`/product/${p._id}`}><img className="img-thumbnail mr-3" src={`http://localhost:8080/uploads/images/${p.productImage}`} alt="" />{p.productName}</Link></td>
+                                        <td><Link to={`/product/${p._id}`}><img className="img-thumbnail mr-3" src={`/uploads/images/${p.productImage}`} alt="" />{p.productName}</Link></td>
                                         <td>
                                             <div className="productQuantityController d-flex font-weight-bolder">
                                                 <div onClick={() => props.productQuantity('decrease', p._id)} className="" style={{ cursor: 'pointer' }}>-</div>

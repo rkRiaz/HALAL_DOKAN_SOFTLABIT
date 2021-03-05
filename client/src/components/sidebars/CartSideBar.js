@@ -19,7 +19,7 @@ const CartSideBar = (props) => {
     const fetchData = async () => {
         let cartProducts = []
         for(let i = 0; i < props.busket.cart_products.length; i++ ) {
-            let {data} = await axios.get(`http://localhost:8080/api/product/get-single-product-by-id/${props.busket.cart_products[i]._id}`)
+            let {data} = await axios.get(`/api/product/get-single-product-by-id/${props.busket.cart_products[i]._id}`)
             cartProducts.push({
                 _id: data.product._id,
                 productName: data.product.productName,
@@ -82,7 +82,7 @@ const CartSideBar = (props) => {
                                                     <div className="tableRow " key={index}>
                                                        <hr/>
                                                         <div className="d-flex">
-                                                        <div className="mr-1" style={{ width: "170px"}}><img style={{ width: "100%", height: "150px" }} className="img-thumbnail" src={`http://localhost:8080/uploads/images/${p.productImage ? p.productImage : ''}`} alt="" /></div>
+                                                        <div className="mr-1" style={{ width: "170px"}}><img style={{ width: "100%", height: "150px" }} className="img-thumbnail" src={`/uploads/images/${p.productImage ? p.productImage : ''}`} alt="" /></div>
                                                         <div className="ml-4 " style={{ width: "130px"}}>
                                                             <p className="font-weight-bold" style={{lineHeight: "17px"}}>{p.productName}</p>
                                                             <div className="d-flex">
