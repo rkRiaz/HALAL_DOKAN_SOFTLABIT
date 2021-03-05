@@ -48,8 +48,8 @@ app.get('/', (req, res) => {
 })
 
 const PORT = process.env.PORT || 8080
-// const MONGODB_URI = `mongodb+srv://${process.env.DB_ADMIN}:${process.env.DB_PASSWORD}@cluster0-p4dm8.mongodb.net/ecommerce_two?retryWrites=true&w=majority`
-const MONGODB_URI = `mongodb://localhost:27017/ecommerce_halalDokan`
+const MONGODB_URI = `mongodb+srv://${process.env.DB_ADMIN}:${process.env.DB_PASSWORD}@cluster0-p4dm8.mongodb.net/ecommerce_two?retryWrites=true&w=majority`
+// const MONGODB_URI = `mongodb://localhost:27017/ecommerce_halalDokan`
 
 mongoose.connect(MONGODB_URI, 
     {
